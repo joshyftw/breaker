@@ -1,0 +1,20 @@
+﻿HTML, BODY {
+	color:black;
+	background-color:white;
+	text-align:center;
+}
+
+DIV#page {
+	float:left;
+	margin:0 auto;
+	width:800px;
+  height:600px;
+	background-color:maroon;
+	text-align:left;
+}
+  DIV#page CANVAS#breaker {
+    position:relative;
+    border:1px solid silver;
+    width:640px;
+    height:480px;
+  }
