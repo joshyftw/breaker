@@ -1,6 +1,26 @@
 ﻿
 .empty { /* bug avoid */ }
 
+* {
+  font-family:sans-serif !important;
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    *zoom:1;
+}
+
 /*** ELEMENTS ***/
 
 HTML, BODY {
@@ -29,6 +49,7 @@ DIV.page {
 	float:left;position:relative;
 	width:100%;height:100%;
   margin:auto auto;
+
   background: #b5bdc8; /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I1YmRjOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iIzgyOGM5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyODM0M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -41,12 +62,30 @@ DIV.page {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-8 */
 }
 
-  DIV.page CANVAS#breaker {
-    position:relative;
-    border:1px solid silver;
-    width:640px;height:480px;
-    text-align:left;
-    background-color:white;
-  }
+DIV.header SPAN { 
+  font-size:48pt;
+  text-transform:uppercase;
+}
+/* 64, 96, 128, 192, 224 */
+DIV.header SPAN#b   { color:rgb(96,64,64); }
+DIV.header SPAN#r1  { color:rgb(64,96,64); }
+DIV.header SPAN#e1  { color:rgb(64,64,96); }
+DIV.header SPAN#a   { color:rgb(96,64,128); }
+DIV.header SPAN#k   { color:rgb(128,64,96); }
+DIV.header SPAN#e2  { color:rgb(224,192,128); }
+DIV.header SPAN#r2  { color:rgb(192,224,224); }
+
+DIV.header SPAN#subtitle {
+  color:white;
+  font-size:24pt;
+}
+
+DIV.page CANVAS#breaker {
+  position:relative;
+  border:1px solid silver;
+  width:640px;height:480px;
+  text-align:left;
+  background-color:white;
+}
   
   
