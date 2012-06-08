@@ -1,12 +1,12 @@
 var breaker_default_conf = {
 
-  "debug":true,
+  "debug": true,
 
   "rows": 4,
   "bricks_per_row": 8,
 
   // TODO later this could be the css values populated, enabling the object to be self contained, without CSS
-  "padding": { // TODO or is a margin???
+  "padding": {
     "bottom": 10 
   },
 
@@ -44,17 +44,4 @@ var breaker_default_conf = {
     }
   }
 // end conf
-},
-
-runtime = {
-  "deltas": { 
-    "bat": { 
-      "x": 0, "y": 0 
-    },
-    "ball": {
-      "x": 0, "y": 0
-    }
-  },
-  "score": 0
-// end runtime
 };
