@@ -1,0 +1,1 @@
+this.runtime.oTimer = setInterval($.proxy(breaker.tick,breaker),this.conf.TICK_INTERVAL);
