@@ -46,8 +46,8 @@ DIV.container {
 }
 
 DIV.breaker {
-	float:left;position:relative;
-	width:100%;height:100%;
+  float:left;position:relative;
+  width:100%;height:100%;
   margin:1em auto;
   padding-top:1em;
   

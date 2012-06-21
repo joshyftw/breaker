@@ -32,9 +32,7 @@ var breaker = (function(){
             
             "score": 0,
             
-            "loops": 0,
-            
-            "oTimer": null
+            "loops": 0
             
         // end runtime
         },
