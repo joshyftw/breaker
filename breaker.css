@@ -66,21 +66,21 @@ DIV.breaker {
 
   DIV.header SPAN { 
     font-size:48pt;
+		font-weight:bold;
     text-transform:uppercase;
   }
-  /* 64, 96, 128, 192, 224 */
-  DIV.header SPAN#b   { color:rgb(96,64,64); }
-  DIV.header SPAN#r1  { color:rgb(64,96,64); }
-  DIV.header SPAN#e1  { color:rgb(64,64,96); }
-  DIV.header SPAN#a   { color:rgb(96,64,128); }
-  DIV.header SPAN#k   { color:rgb(128,64,96); }
-  DIV.header SPAN#e2  { color:rgb(224,192,128); }
-  DIV.header SPAN#r2  { color:rgb(192,224,224); }
+		DIV.header SPAN#b   { color:rgb(8,32,8); }
+		DIV.header SPAN#r1  { color:rgb(16,96,32); }
+		DIV.header SPAN#e1  { color:rgb(64,16,96); }
+		DIV.header SPAN#a   { color:rgb(96,64,128); }
+		DIV.header SPAN#k   { color:rgb(128,64,96); }
+		DIV.header SPAN#e2  { color:rgb(224,192,128); }
+		DIV.header SPAN#r2  { color:rgb(224,224,196); }
 
-  DIV.header SPAN#subtitle {
-    color:white;
-    font-size:24pt;
-  }
+		DIV.header SPAN#subtitle {
+			color:white;
+			font-size:24pt;
+		}
 
   DIV.breaker CANVAS {
     position:relative;
